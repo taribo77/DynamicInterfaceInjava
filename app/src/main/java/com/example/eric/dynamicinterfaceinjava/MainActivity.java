@@ -18,6 +18,8 @@ public class MainActivity extends ActionBarActivity {
         RelativeLayout ericLayout =new RelativeLayout(this);
         ericLayout.setBackgroundColor(Color.BLUE);
         Button redButton = new Button(this);
+        redButton.setText("Click Me");
+        redButton.setBackgroundColor(Color.RED);
 
         ericLayout.addView(redButton);
         setContentView(ericLayout);
