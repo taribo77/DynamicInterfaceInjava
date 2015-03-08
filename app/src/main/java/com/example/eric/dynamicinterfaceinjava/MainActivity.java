@@ -17,11 +17,19 @@ public class MainActivity extends ActionBarActivity {
 
         RelativeLayout ericLayout =new RelativeLayout(this);
         ericLayout.setBackgroundColor(Color.BLUE);
+        RelativeLayout.LayoutParams buttonLayout = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT
+        );
+
+
+        buttonLayout.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        buttonLayout.addRule(RelativeLayout.CENTER_VERTICAL);
+
         Button redButton = new Button(this);
-        redButton.setText("Click Me");
+        redButton.setText("Log In");
         redButton.setBackgroundColor(Color.RED);
 
-        ericLayout.addView(redButton);
+        ericLayout.addView(redButton,buttonLayout);
         setContentView(ericLayout);
 
 
